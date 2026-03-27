@@ -11,7 +11,7 @@ const app = express();
 // Middleware
 const FRONTEND_URL = process.env.FRONTEND_URL || 'http://localhost:5173';
 app.use(cors({
-  origin: FRONTEND_URL,
+  origin: "https://facebooklogin-client.vercel.app",
   credentials: true
 }));
 app.use(express.json());
